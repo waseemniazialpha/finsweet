@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CardsDataService } from '../services/cards-data.service';
 
 @Component({
   selector: 'app-main',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
+  cards:any;
+  constructor(private cardsData:CardsDataService){
+    cardsData.cards().subscribe((data)=>{
+      this.cards = data
+    } );
+  }
+  ngOnInit(): void{
 
+  }
 }
