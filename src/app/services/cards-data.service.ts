@@ -4,6 +4,9 @@ import{HttpClient} from '@angular/common/http'
   providedIn: 'root'
 })
 export class CardsDataService {
+  getCards() {
+    throw new Error('Method not implemented.');
+  }
   getCard(id: number) {
     throw new Error('Method not implemented.');
   }
@@ -12,12 +15,12 @@ export class CardsDataService {
   }
 
   constructor(private http:HttpClient) { }
-  url = "http://localhost:3000/card"
+  url = "http://localhost:3000/cards"
   cards(){
     return this.http.get(this.url)
   }
   
-  getOne(id: string){
-    return this.http.get("http://localhost:3000/card"+id)
-  }
+  // getOne(id: string){
+  //   return this.http.get("http://localhost:3000/card"+id)
+  // }
 }

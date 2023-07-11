@@ -9,7 +9,8 @@ import { CardsDataService } from '../services/cards-data.service';
 export class MainComponent {
   cards:any;
   constructor(private cardsData:CardsDataService){
-    cardsData.cards().subscribe((data)=>{
+    
+    this.cardsData.cards().subscribe((data)=>{
       this.cards = data
     } );
   }

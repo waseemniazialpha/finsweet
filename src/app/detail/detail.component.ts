@@ -10,18 +10,18 @@ import { CardsDataService } from '../services/cards-data.service';
 export class DetailComponent {
   card: any;
   cardId:any;
-  constructor(private activatedRoute: ActivatedRoute , private service : CardsDataService){}
+  constructor(){}
 
   ngOnInit(): void{
-    this.cardId = this.activatedRoute.snapshot.paramMap.get("id");
-    this.getOne()
-    // console.log(this.cardId)
-  //  this.card =  this.service.cards.find((x: { id: string | null | undefined; }) => x.id == this.cardId)
-  //  console.warn(this.card)
-  }
-  getOne(){
-    this.service.getOne(this.cardId).subscribe(data=>{
-      console.log(data);
-    })
+  //   // this.cardId = this.activatedRoute.snapshot.paramMap.get("id");
+  //   // this.getOne()
+  //   // console.log(this.cardId)
+  // //  this.card =  this.service.cards.find((x: { id: string | null | undefined; }) => x.id == this.cardId)
+  // //  console.warn(this.card)
+  // }
+  // // getOne(){
+  // //   this.service.getOne(this.cardId).subscribe(data=>{
+  // //     console.log(data);
+  // //   })
   }
 }

@@ -9,17 +9,17 @@ import {CardsDataService} from './services/cards-data.service'
 export class AppComponent {
   title = 'my-project';
   cards:any;
-  constructor(private cardsData:CardsDataService){ }
-  getCards(){
+  constructor(private cardsData:CardsDataService){
+    
     this.cardsData.cards().subscribe((data)=>{
       this.cards = data
     } );
   }
-  getCard(id: any) {
-    this.cards = this.getCards();
-    const selectedCard = this.cards.find((card: { id: any; }) => card.id === id)
-    return selectedCard;
-}
+//   getCard(id: any) {
+//     this.cards = this.getCards();
+//     const selectedCard = this.cards.find((card: { id: any; }) => card.id === id)
+//     return selectedCard;
+// }
   // getCard(id:number){
   //   this.cardsData.cards().subscribe((data)=>{
   //     this.cards = data
