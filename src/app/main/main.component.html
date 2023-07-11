@@ -1,23 +1,25 @@
 <div class="max-w-7xl m-auto my-12">
     <div class="text-[#96969E] max-w-[831px] text-center mx-5 sm:m-auto">
         <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had
-            ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a
+            ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on
+            a
             hillside.</p>
         <button class="mt-4 text-[#2405F2]">Read more</button>
     </div>
 
 
     <h2 class="text-center text-5xl font-semibold my-12">Our Blog</h2>
-    <div  class="cards grid grid-cols-1  mx-5 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8" >
-        <div *ngFor = "let card of cards">
-        <div class="card cursor-pointer" routerLink="detail/{{card.id}}">
-            <img src={{card.url}} alt="">
+
+    <div class="cards grid grid-cols-1 mx-5 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
+        <div *ngFor="let card of cards">
+          <div class="card cursor-pointer" routerLink="detail/{{card.id}}">
+            <img [src]="card.url" alt="">
             <p class="text-[#AEAEB5] mt-8 mb-4">{{card.dateTime}}</p>
-            <p class="text-xl md:text-2xl font-medium ">{{card.title}}</p>
+            <p class="text-xl md:text-2xl font-medium">{{card.title}}</p>
             <p class="text-[#96969E] mt-4 mb-6">{{card.description}}</p>
-            <a routerLink="detail/{{card.id}}" class="flex gap-2 items-center">Read more <img src="../../assets/images/Arrow 1.png"
-                    alt=""></a>
+            <a routerLink="detail/{{card.id}}" class="flex gap-2 items-center">Read more <img src="../../assets/images/Arrow 1.png" alt=""></a>
+          </div>
         </div>
-    </div>
-    </div>
+      </div>
+      
 </div>

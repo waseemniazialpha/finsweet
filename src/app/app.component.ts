@@ -1,5 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import {CardsDataService} from './services/cards-data.service'
+
 
 @Component({
   selector: 'app-root',
@@ -8,24 +9,18 @@ import {CardsDataService} from './services/cards-data.service'
 })
 export class AppComponent {
   title = 'my-project';
-  cards:any;
-  constructor(private cardsData:CardsDataService){
-    
-    this.cardsData.cards().subscribe((data)=>{
-      this.cards = data
-    } );
-  }
-//   getCard(id: any) {
-//     this.cards = this.getCards();
-//     const selectedCard = this.cards.find((card: { id: any; }) => card.id === id)
-//     return selectedCard;
-// }
-  // getCard(id:number){
-  //   this.cardsData.cards().subscribe((data)=>{
-  //     this.cards = data
-  //   } );
-  // }
-  ngOnInit(): void{
+  cards: any;
+
+  constructor(private http: HttpClient) {
 
   }
-}
+
+  ngOnInit(): void {
+    this.http.get('assets/db.json').subscribe((data) => {
+      // Access the data from db.json
+     this.cards=data
+     console.log()
+    });
+  }
+  }
+

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CardsDataService } from '../services/cards-data.service';
+
 
 @Component({
   selector: 'app-detail',
