@@ -34,7 +34,10 @@
     color: #fff;
     text-decoration: none;
   } */
-
+  .menu {
+    transition: all 2s ease;
+    /* Other styles for the menu */
+  }
 ul.show {
     display: block;
     position: absolute;
@@ -44,7 +47,7 @@ ul.show {
     padding: 30px;
     right: 0px;
     text-align: center;
-    /* transition: all 2s; */
+    transition: all 2s ease;
 }
 ul.show li{
     margin-bottom: 10px;

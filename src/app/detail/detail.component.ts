@@ -1,27 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
-  styleUrls: ['./detail.component.css']
+  styleUrls: ['./detail.component.css'],
 })
-export class DetailComponent {
+export class DetailComponent implements OnInit {
   card: any;
-  cardId:any;
-  constructor(){}
 
-  ngOnInit(): void{
-  //   // this.cardId = this.activatedRoute.snapshot.paramMap.get("id");
-  //   // this.getOne()
-  //   // console.log(this.cardId)
-  // //  this.card =  this.service.cards.find((x: { id: string | null | undefined; }) => x.id == this.cardId)
-  // //  console.warn(this.card)
-  // }
-  // // getOne(){
-  // //   this.service.getOne(this.cardId).subscribe(data=>{
-  // //     console.log(data);
-  // //   })
+  constructor(private route: ActivatedRoute, private http: HttpClient) { }
+
+  ngOnInit(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    console.log('id', id)
+
+    this.http.get<any>('assets/db.json').subscribe((data) => {
+      console.log('data', data.cards)
+      this.card = data.cards.find((card: any) => {
+        if (card.id == id)
+          return card
+      });
+      // If no card is found, you can handle the error or display an appropriate message
+    });
+
   }
 }
