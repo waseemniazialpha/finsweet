@@ -16,9 +16,9 @@ export class DetailComponent implements OnInit {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     console.log('id', id)
 
-    this.http.get<any>('assets/db.json').subscribe((data) => {
-      console.log('data', data.cards)
-      this.card = data.cards.find((card: any) => {
+    this.http.get<any>('https://jsonplaceholder.typicode.com/photos').subscribe((data) => {
+      console.log('data', data)
+      this.card = data.find((card: any) => {
         if (card.id == id)
           return card
       });

@@ -9,18 +9,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-project';
-  cards: any;
+  // cards: any;
 
   constructor(private http: HttpClient) {
 
   }
 
-  ngOnInit(): void {
-    this.http.get('assets/db.json').subscribe((data) => {
-      // Access the data from db.json
-     this.cards=data
-     console.log()
-    });
-  }
+  // ngOnInit(): void {
+  //   this.http.get('assets/db.json').subscribe((data) => {
+  //     // Access the data from db.json
+  //    this.cards=data
+  //    console.log()
+  //   });
+  // }
   }
 
