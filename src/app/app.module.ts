@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DetailComponent } from './detail/detail.component';
 import {HttpClientModule} from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule,
     MatIconModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+
   ],
   exports: [
     BrowserModule,

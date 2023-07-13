@@ -11,12 +11,12 @@
     <h2 class="text-center text-5xl font-semibold my-12">Our Blog</h2>
 
     <div class=" cards grid grid-cols-1 mx-5 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
-        <div *ngFor="let card of cards">
+        <div *ngFor="let card of combinedData">
           <div class="card cursor-pointer" routerLink="detail/{{card.id}}">
             <img [src]="card.url" alt="">
             <p class="text-[#AEAEB5] mt-8 mb-4">27 Jan 2021</p>
             <p class="text-xl md:text-2xl font-medium h-[70px] overflow-hidden">{{card.title}}</p>
-            <p class="text-[#96969E] mt-4 mb-6 h-[50px] overflow-hidden">{{card.title}}{{card.title}}</p>
+            <p class="text-[#96969E] mt-4 mb-6 h-[50px] overflow-hidden">{{card.body}}</p>
             <a routerLink="detail/{{card.id}}" class="flex gap-2 items-center">Read more <img src="../../assets/images/Arrow 1.png" alt=""></a>
           </div>
         </div>
