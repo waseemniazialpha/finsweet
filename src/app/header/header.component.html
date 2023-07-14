@@ -13,7 +13,7 @@
             </div>
     </div>
     <div class="navbar max-w-7xl m-auto flex flex-col px-5 box-border gap-4 md:items-center py-4 md:py-8 md:justify-between md:flex-row">
-        <div class="logo w-20 md:w-40">
+        <div class="logo w-25 md:w-40">
             <a routerLink=""><img src="../../assets/images/Logo.png" alt=""></a>
         </div>
         <div class="menu">
@@ -24,7 +24,7 @@
                 <li><a routerLink="pricing" (click)="toggleMenu()">Pricing</a></li>
                 <li><a routerLink="faq" (click)="toggleMenu()">FAQ</a></li>
                 <li><a routerLink="blog" (click)="toggleMenu()">Blog</a></li>
-                <button  class="btn py-2 px-8 text-sm lg:text-base lg:py-4 my-5 md:m-0 lg:px-12 border bg-transparent border-[#BBBBCB] rounded-full text-[#ffffff] hover:bg-white hover:text-black transition-all duration-700" routerLink="contact">Contact us</button>
+                <button  class="btn py-2 px-8 text-sm lg:text-base lg:py-4 my-5 md:m-0 lg:px-12 border bg-transparent border-[#BBBBCB] rounded-full text-[#ffffff] hover:bg-white hover:text-black transition-all duration-700" routerLink="contact" (click)="toggleMenu()">Contact us</button>
             </ul>
             
         </div>
