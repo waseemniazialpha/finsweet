@@ -19,12 +19,12 @@
         <div class="menu">
             <ul class="hidden md:flex items-center text-[#BBBBCB]  text-sm sm:text-[13px] lg:text-base sm:font-medium gap-4 sm:gap-6  list-none" [ngClass]="{ 'show': isMenuOpen }">
                 <li><a routerLink="" (click)="toggleMenu()">Home</a></li>
-                <li><a href="about" (click)="toggleMenu()">About us</a></li>
-                <li><a href="features" (click)="toggleMenu()">Features</a></li>
-                <li><a href="pricing" (click)="toggleMenu()">Pricing</a></li>
-                <li><a href="faq" (click)="toggleMenu()">FAQ</a></li>
-                <li><a href="blog" (click)="toggleMenu()">Blog</a></li>
-                <button class="btn py-2 px-8 text-sm lg:text-base lg:py-4 my-5 md:m-0 lg:px-12 border bg-transparent border-[#BBBBCB] rounded-full text-[#ffffff] hover:bg-white hover:text-black transition-all duration-700">Contact us</button>
+                <li><a routerLink="about" (click)="toggleMenu()">About us</a></li>
+                <li><a routerLink="features" (click)="toggleMenu()">Features</a></li>
+                <li><a routerLink="pricing" (click)="toggleMenu()">Pricing</a></li>
+                <li><a routerLink="faq" (click)="toggleMenu()">FAQ</a></li>
+                <li><a routerLink="blog" (click)="toggleMenu()">Blog</a></li>
+                <button  class="btn py-2 px-8 text-sm lg:text-base lg:py-4 my-5 md:m-0 lg:px-12 border bg-transparent border-[#BBBBCB] rounded-full text-[#ffffff] hover:bg-white hover:text-black transition-all duration-700" routerLink="contact">Contact us</button>
             </ul>
             
         </div>
