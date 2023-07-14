@@ -1,24 +1,30 @@
 <div class="bg-[#1C1E53]">
     <div class="md:hidden">
-        <div class="burger flex flex-col gap-1 absolute top-4 right-6" (click)="toggleMenu()">
+        <!-- <div class="burger flex flex-col gap-1 absolute top-4 right-6" (click)="toggleMenu()">
             <div class="w-6 h-[2px] bg-white"></div>
             <div class="w-6 h-[2px] bg-white"></div>
             <div class="w-6 h-[2px] bg-white"></div>
-        </div>
+        </div> -->
+            <div class="burger" for="check" (click)="toggleMenu()">
+      <input type="checkbox" id="check"/> 
+      <span></span>
+      <span></span>
+      <span></span>
+            </div>
     </div>
     <div class="navbar max-w-7xl m-auto flex flex-col px-5 box-border gap-4 md:items-center py-4 md:py-8 md:justify-between md:flex-row">
         <div class="logo w-20 md:w-40">
-            <a href="#"><img src="../../assets/images/Logo.png" alt=""></a>
+            <a routerLink=""><img src="../../assets/images/Logo.png" alt=""></a>
         </div>
         <div class="menu">
-            <ul class="hidden md:flex items-center text-[#BBBBCB] text-sm sm:text-[13px] lg:text-base sm:font-medium gap-4 sm:gap-6  list-none" [ngClass]="{ 'show': isMenuOpen }">
+            <ul class="hidden md:flex items-center text-[#BBBBCB]  text-sm sm:text-[13px] lg:text-base sm:font-medium gap-4 sm:gap-6  list-none" [ngClass]="{ 'show': isMenuOpen }">
                 <li><a routerLink="">Home</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Blog</a></li>
-                <button class="btn py-2 px-8 text-sm lg:text-base lg:py-4 lg:px-12 border bg-transparent border-[#BBBBCB] rounded-full text-[#ffffff]">Contact us</button>
+                <button class="btn py-2 px-8 text-sm lg:text-base lg:py-4 my-5 md:m-0 lg:px-12 border bg-transparent border-[#BBBBCB] rounded-full text-[#ffffff] hover:bg-white hover:text-black transition-all duration-700">Contact us</button>
             </ul>
             
         </div>
