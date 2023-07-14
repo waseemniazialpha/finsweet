@@ -102,23 +102,23 @@
 
    @media only screen and (max-width: 768px){
     ul.show {
-      display: block;
-      position: absolute;
-      background: #1C1E53;
-      top: 40px;
-      width: 100%;
-      padding: 30px;
-      right: 0px;
-      text-align: center;
-      transition: all 2s ease;
-  }
-  ul.show li{
-      margin-bottom: 10px;
-      border-bottom: 1px solid #282a68;
-      padding: 10px 0;
-     
-  
-  }
+    display: block;
+    position: absolute;
+    background: #1C1E53;
+    top: 40px;
+    width: 100%;
+    padding: 30px;
+    right: 0px;
+    text-align: center;
+    transition: all 2s ease;
+}
+ul.show li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #282a68;
+    padding: 10px 0;
+   
+
+}
    }
 
 ul li a{
