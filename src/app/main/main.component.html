@@ -10,7 +10,7 @@
 
     <h2 class="text-center text-[#282938] text-3xl md:text-5xl font-semibold my-12">Our Blog</h2>
 
-    <div class=" cards grid grid-cols-1 mx-5 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
+    <div class=" cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
         <div *ngFor="let card of combinedData">
           <div class="card cursor-pointer" routerLink="detail/{{card.id}}">
             <img [src]="card.url" alt="">

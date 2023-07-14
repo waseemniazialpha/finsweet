@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   isMenuOpen = false;
-
+  isChanged = false;
   toggleMenu() {
+    this.isChanged = !this.isChanged;
     this.isMenuOpen = !this.isMenuOpen;
     const menu = document.querySelector('ul.menu');
     if (menu) {
