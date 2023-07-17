@@ -1,46 +1,40 @@
 {
-  "cards": [
+  "gData":[
     {
-      "dateTime": "27 Jan 2021",
-      "title": "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
-      "description": "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-      "url": "../../assets/images/photo-of-people-using-laptops-3182833.png",
+      "image": "../../assets/images/Icon1.png",
+      "title": "Uses Client First",
+      "des": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
       "id": 1
     },
     {
-      "dateTime": "27 Jan 2021",
-      "title": "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
-      "description": "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-      "url": "../../assets/images/side-view-photo-of-smiling-woman-in-a-black-and-white-striped-top-sitting-on-a-bed-while-using-a-laptop-3765035.png",
+      "image": "../../assets/images/Icon2.png",
+      "title": "Two Free Revision Round",
+      "des": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
       "id": 2
     },
     {
-      "dateTime": "27 Jan 2021",
-      "title": "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
-      "description": "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-      "url": "../../assets/images/top-view-photo-of-person-holding-earphones-3183198.png",
+      "image": "../../assets/images/Icon3.png",
+      "title": "Template Customization",
+      "des": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
       "id": 3
     },
     {
-      "dateTime": "27 Jan 2021",
-      "title": "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
-      "description": "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-      "url": "../../assets/images/top-view-photo-of-people-having-a-meeting-3182822.png",
+      "image": "../../assets/images/Icon4.png",
+      "title": "24/7 Support",
+      "des": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
       "id": 4
     },
     {
-      "dateTime": "27 Jan 2021",
-      "title": "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
-      "description": "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-      "url": "../../assets/images/man-wearing-red-crew-neck-shirt-1125028.png",
+      "image": "../../assets/images/Icon5.png",
+      "title": "Quick Delivery",
+      "des": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
       "id": 5
     },
     {
-      "dateTime": "27 Jan 2021",
-      "title": "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
-      "description": "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-      "url": "../../assets/images/group-of-person-sitting-indoors-3184306.png",
+      "image": "../../assets/images/Icon6.png",
+      "title": "Hands-on approach",
+      "des": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
       "id": 6
     }
   ]
-}
+  }

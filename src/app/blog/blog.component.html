@@ -1,1 +1,27 @@
-<p class="text-center font-bold text-5xl my-14">blog works!</p>
+<app-banner  />
+<div class="max-w-7xl m-auto my-12 px-5">
+    <div class="text-[#96969E] max-w-[831px] text-center mx-5 sm:m-auto text-sm md:text-base">
+        <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had
+            ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on
+            a
+            hillside.</p>
+        <button class="mt-4 text-[#2405F2]">Read more</button>
+    </div>
+
+
+    <h2 class="text-center text-[#282938] text-3xl md:text-5xl font-semibold my-12">Our Blog</h2>
+
+    <div class=" cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8  ">
+        <div *ngFor="let card of combinedData" class="group">
+          <div class="card cursor-pointer" routerLink="/detail/{{card.id}}">
+            <img [src]="card.url" alt="">
+            <p class="text-[#AEAEB5] mt-8 mb-4 text-sm md:text-base">27 Jan 2021</p>
+            <p class="text-[#282938] text-xl md:text-2xl font-medium h-[60px] overflow-hidden">{{card.title}}</p>
+            <p class="text-[#96969E] mt-4 mb-6 h-[40px] md:h-[50px] overflow-hidden text-sm md:text-base">{{card.body}}</p>
+            <a routerLink="/detail/{{card.id}}" class=" flex gap-2 items-center text-sm md:text-base mb-4 text-[#1C1E53] font-medium">Read more <img src="../../assets/images/Arrow 1.png " alt="" class="group-hover:translate-x-2	transition-all duration-500"></a>
+          </div>
+        </div>
+      </div>
+      
+      
+</div>

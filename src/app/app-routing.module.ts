@@ -10,17 +10,18 @@ import { FaqComponent } from './faq/faq.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 
-const routes: Routes = [{
-  path: "detail/:id", component: DetailComponent
+const routes: Routes = [
+  { path: "", component: MainComponent },
+  { path: "about", component: AboutComponent },
+  { path: "features", component: FeaturesComponent },
+  { path: "pricing", component: PricingComponent },
+  { path: "faq", component: FaqComponent },
+  { path: "blog", component: BlogComponent },
+  { path: "contact", component: ContactComponent },
+  {
+    path: "detail/:id", component: DetailComponent
 
-},
-{ path: "", component: MainComponent },
-{ path: "about", component: AboutComponent },
-{ path: "features", component: FeaturesComponent },
-{ path: "pricing", component: PricingComponent },
-{ path: "faq", component: FaqComponent },
-{ path: "blog", component: BlogComponent },
-{ path: "contact", component: ContactComponent },
+  },
 ]
 
 @NgModule({

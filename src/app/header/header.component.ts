@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,22 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   isMenuOpen = false;
-  isChanged = false;
+
+  constructor(private renderer: Renderer2, private elementRef: ElementRef) {}
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+
   toggleMenu() {
-    this.isChanged = !this.isChanged;
     this.isMenuOpen = !this.isMenuOpen;
-    const menu = document.querySelector('ul.menu');
-    if (menu) {
-      menu.classList.toggle('show');
+
+    // Add or remove a CSS class to show or hide the menu
+    const menuContent = this.elementRef.nativeElement.querySelector('.menu-content');
+    if (this.isMenuOpen) {
+      this.renderer.addClass(menuContent, 'show');
+    } else {
+      this.renderer.removeClass(menuContent, 'show');
     }
-    
+  }
+
     
   }
   
 
-  ngOnInit(): void {
  
-  }
 
 
-}
