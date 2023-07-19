@@ -1,17 +1,12 @@
 <div class="bg-[#1C1E53]">
     <div class="md:hidden">
-        <!-- <div class="burger flex flex-col gap-1 absolute top-4 right-6" (click)="toggleMenu()">
-            <div class="w-6 h-[2px] bg-white"></div>
-            <div class="w-6 h-[2px] bg-white"></div>
-            <div class="w-6 h-[2px] bg-white"></div>
-        </div> -->
-            <div class="burger" for="check" (click)="toggleMenu()">
-      <input type="checkbox" id="check"/> 
-      <span></span>
-      <span></span>
-      <span></span>
-            </div>
-    </div>
+        <div class="burger" [class.cross]="isMenuOpen" for="check" (click)="toggleMenu()">
+          <input type="checkbox" id="check" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     <div class="navbar max-w-7xl m-auto justify-center flex flex-col px-5 box-border gap-4 md:items-center py-4 md:py-8 md:justify-between md:flex-row">
         <div class="logo w-22 md:w-40">
             <a routerLink=""><img src="../../assets/images/Logo.png" alt=""></a>

@@ -1,113 +1,65 @@
-/* 
+/* header.component.css */
+/* ... Existing styles ... */
+.burger {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+}
+/* Hide the checkbox input */
+.burger input[type="checkbox"] {
+  visibility: hidden;
+}
 
-  
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 30px;
-  }
-  
-  .hamburger > div {
-    width: 100%;
-    height: 2px;
-    background: #fff;
-  } */
+/* header.component.css */
+/* ... Existing styles ... */
 
-/* ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  ul li {
-    margin-left: 10px;
-  }
-  
-  ul li a {
-    color: #fff;
-    text-decoration: none;
-  } */
 
-  .burger{
-    display:flex;
-     flex-direction:column;
-     width:30px;
-     cursor:pointer;
-     position: absolute;
-     right: 20px;
-     top: 18px;
-   }
-   
-   .burger span{
-     background: #fff;
-     border-radius:10px;
-     height:3px;
-     margin: 2px 0;
-     transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
-   
-   }
-   
-   
-   span:nth-of-type(1){
-     width:50%;
-     
-   }
-   
-   span:nth-of-type(2){
-     width:80%;
-   }
-   
-   
-   span:nth-of-type(3){
-     width:75%;
-    
-   }
-   
-   
-   input[type="checkbox"]{
-     display:none;
-   }
-   
-   
-   input[type="checkbox"]:checked ~ span:nth-of-type(1){
-     transform-origin:bottom;
-     transform:rotatez(45deg) translate(6px,0px)
-   }
-   
-   
-   input[type="checkbox"]:checked ~ span:nth-of-type(2){
-     
-     transform-origin:top;
-     transform:rotatez(-45deg)
-   }
-   
-   
-   input[type="checkbox"]:checked ~ span:nth-of-type(3){
-     
-     transform-origin:bottom;
-     width:50%;
-     transform: translate(9px,-5px) rotatez(45deg);
-   
-   }
-   
 
-   .menu-content-wrapper .menu-content:not(.show) {
-    display: none;
-  }
+/* header.component.css */
+/* ... Existing styles ... */
+
+
+
+.burger span {
+  background: #fff;
+  border-radius: 10px;
+  height: 3px;
+  width: 24px; /* Set the width of the spans to 100% */
+  margin: 2px 0;
+  transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.burger.cross span:nth-of-type(1) {
+  transform-origin: center;
+  transform: rotate(45deg) translate(4px, 3px); /* Adjust the translation values */
+}
+
+.burger.cross span:nth-of-type(2) {
+  transform-origin: center;
+  transform: rotate(-45deg) translate(2px, -2px); /* Adjust the translation values */
+}
+
+.burger.cross span:nth-of-type(3) {
+  display: none; /* Hide the third span, as it is not needed for the cross icon */
+}
+
+/* ... Remaining styles ... */
+  
+
+.menu-content-wrapper .menu-content:not(.show) {
+  display: none;
+}
 
    @media only screen and (max-width: 767px){
     ul.show {
     display: block;
     position: absolute;
     background: #1C1E53;
-    top: 40px;
+    top: 50px;
     width: 100%;
     padding: 30px;
     right: 0px;
