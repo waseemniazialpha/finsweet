@@ -9,7 +9,7 @@
       </div>
       <div class="flex gap-8 items-center mb-5 justify-center md:justify-start">
         <button class="py-2 px-8 lg:py-4 lg:px-14 rounded-full text-xs md:text-base text-[#000] bg-[#FCD980] font-semibold">View our work</button>
-        <button class="flex gap-4 items-center text-white text-xs md:text-base">View Pricing <img src="../../assets/images/Arrow 1 (1).png "
+        <button class="group flex gap-4 items-center text-white text-xs md:text-base">View Pricing <img src="../../assets/images/Arrow 1 (1).png "
             alt="" class="group-hover:translate-x-2	transition-all duration-500"></button>
       </div>
     </div>
@@ -26,8 +26,8 @@
       <h2 class="text-3xl lg:text-5xl font-semibold">How we work</h2>
       <p class="max-w-[400px] my-4 text-[#90929C] text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor.</p>
-      <button class="flex gap-4 items-center text-[#2405F2] mb-5 text-sm lg:text-base">Get in touch with us <img
-          src="../../assets/images/Arrow 2.png" alt=""></button>
+      <button class="group flex gap-4 items-center text-[#2405F2] mb-5 text-sm lg:text-base">Get in touch with us <img
+          src="../../assets/images/Arrow 2.png" alt="" class="group-hover:translate-x-2	transition-all duration-500"></button>
     </div>
 
     <div class="basis-[60%] w-full">
@@ -168,8 +168,9 @@
       </div>
     </div>
     <div class="basis-[60%]">
-      <div *ngFor="let item of jsonData; let i = index" class="flex justify-between mb-8 ">
-        <div class="flex gap-14 border-b-2 pb-8">
+      <div *ngFor="let item of jsonData; let i = index" class="">
+        <div class="flex justify-between mb-8 items-center border-b-2 pb-8">
+        <div class="flex gap-14 ">
           <h3 class="text-[#5239FA] md:text-xl xl:text-2xl font-semibold">{{ item.num }}</h3>
           <div class="max-w-[624px]">
             <h2 class="font-medium md:text-xl xl:text-2xl mb-4">{{ item.title }}</h2>
@@ -178,10 +179,10 @@
         </div>
         <div class="cursor-pointer" (click)="toggleParagraph(i)">
           <img src="../../assets/images/cross.png" alt="" [hidden]="currentItemIndex !== i">
-          <img src="../../assets/images/plus.png" alt="" [hidden]="currentItemIndex === i">
+          <img src="../../assets/images/plus.png" alt="" class="hover:scale-125 	transition-all duration-500" [hidden]="currentItemIndex === i">
         </div>
       </div>
-      
+    </div>
       
       
       
