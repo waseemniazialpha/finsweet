@@ -169,27 +169,27 @@
     </div>
     <div class="basis-[60%]">
       <div *ngFor="let item of jsonData; let i = index" class="">
-        <div class="flex justify-between mb-8 items-center border-b-2 pb-8">
-        <div class="flex gap-14 ">
-          <h3 class="text-[#5239FA] md:text-xl xl:text-2xl font-semibold">{{ item.num }}</h3>
-          <div class="max-w-[624px]">
-            <h2 class="font-medium md:text-xl xl:text-2xl mb-4">{{ item.title }}</h2>
-            <p class="text-sm lg:text-base" [hidden]="currentItemIndex !== i">{{ item.detail }}</p>
+        <div class="flex justify-between mb-8  border-b-2 pb-8 cursor-pointer" (click)="toggleParagraph(i)">
+          <div class="flex gap-14">
+            <h3 class="text-[#5239FA] md:text-xl xl:text-2xl font-semibold">{{ item.num }}</h3>
+            <div class="max-w-[624px]">
+              <h2 class="font-medium md:text-xl xl:text-2xl mb-4">{{ item.title }}</h2>
+              <p class="text-sm lg:text-base" [hidden]="currentItemIndex !== i">{{ item.detail }}</p>
+            </div>
+          </div>
+          <div class="cursor-pointer" (click)="onCrossIconClick($event, i)">
+            <img src="../../assets/images/cross.png" alt="" [hidden]="currentItemIndex !== i">
+            <img src="../../assets/images/plus.png" alt="" class="hover:scale-125 transition-all duration-500" [hidden]="currentItemIndex === i">
           </div>
         </div>
-        <div class="cursor-pointer" (click)="toggleParagraph(i)">
-          <img src="../../assets/images/cross.png" alt="" [hidden]="currentItemIndex !== i">
-          <img src="../../assets/images/plus.png" alt="" class="hover:scale-125 	transition-all duration-500" [hidden]="currentItemIndex === i">
-        </div>
       </div>
-    </div>
+      
       
       
       
     </div>
   </div>
 </div>
-
 
 
 

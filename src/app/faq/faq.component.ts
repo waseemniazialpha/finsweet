@@ -53,4 +53,8 @@ export class FaqComponent {
       this.currentItemIndex = index; // Show the <p> tag for the clicked item
     }
   }
+  onCrossIconClick(event: Event, index: number) {
+    event.stopPropagation();
+    this.toggleParagraph(index);
+  }
 }
