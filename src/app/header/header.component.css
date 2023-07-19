@@ -98,9 +98,11 @@
    }
    
 
+   .menu-content-wrapper .menu-content:not(.show) {
+    display: none;
+  }
 
-
-   @media only screen and (max-width: 750px){
+   @media only screen and (max-width: 767px){
     ul.show {
     display: block;
     position: absolute;
