@@ -146,3 +146,21 @@
     bottom: -12%;
   }
 }
+.star {
+  position: fixed;
+  background-color: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.bg-wrapper {
+  position: relative;
+  background-color: #1C1E53;
+  overflow: hidden;
+ /* Adjust this value to control the height of the section */
+}
+
+.star {
+  position: absolute;
+}
+
+/* Rest of your existing CSS styles for stars... */
