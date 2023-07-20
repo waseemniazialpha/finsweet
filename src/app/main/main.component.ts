@@ -54,9 +54,9 @@ export class MainComponent  implements OnInit {
 
   toggleParagraph(index: number) {
     if (this.currentItemIndex === index) {
-      this.currentItemIndex = -1; // Hide the currently shown <p> tag
+      this.currentItemIndex = -1; 
     } else {
-      this.currentItemIndex = index; // Show the <p> tag for the clicked item
+      this.currentItemIndex = index; 
     }
   }
   onCrossIconClick(event: Event, index: number) {
